@@ -6,11 +6,21 @@
 
 	<servlet>
 		<servlet-name>HelloServlet</servlet-name>
-		<servlet-class>org.polytech.shipme.HelloServlet</servlet-class>
+		<servlet-class>org.polytech.shipme.api.HelloServlet</servlet-class>
 	</servlet>
+	
 	<servlet-mapping>
 		<servlet-name>HelloServlet</servlet-name>
 		<url-pattern>/hello</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>BestOfferServlet</servlet-name>
+		<servlet-class>org.polytech.shipme.api.BestOffersServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BestOfferServlet</servlet-name>
+		<url-pattern>/api/best-offers</url-pattern>
 	</servlet-mapping>
   
 </web-app>

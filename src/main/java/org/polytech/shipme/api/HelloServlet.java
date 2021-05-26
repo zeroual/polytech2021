@@ -1,4 +1,4 @@
-package org.polytech.shipme;
+package org.polytech.shipme.api;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
