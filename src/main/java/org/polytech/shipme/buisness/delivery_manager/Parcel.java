@@ -1,9 +1,13 @@
-package org.polytech.shipme.buisness;
+package org.polytech.shipme.buisness.delivery_manager;
 
 public class Parcel {
-    private ParcelType type;
+    ParcelType type;
 
     public Parcel() {
+    }
+
+    public Parcel(ParcelType type) {
+        this.type = type;
     }
 
     public ParcelType getType() {
@@ -13,4 +17,8 @@ public class Parcel {
     public void setType(ParcelType type) {
         this.type = type;
     }
+}
+
+enum ParcelType {
+    SMALL, MEDIUM, LARGE
 }

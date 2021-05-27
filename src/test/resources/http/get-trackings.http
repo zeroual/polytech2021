@@ -1,0 +1,17 @@
+GET http://localhost:8080/trackings/535a5ee3-25b2-4df8-b927-cfb15e7967fe
+Accept: */*
+Cache-Control: no-cache
+
+###
+PUT http://localhost:8080/trackings/535a5ee3-25b2-4df8-b927-cfb15e7967fe
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+//{
+//  "type": "1",
+//  "position": {
+//    "lat":"0839383",
+//    "lng": "983292"
+//  }
+//}

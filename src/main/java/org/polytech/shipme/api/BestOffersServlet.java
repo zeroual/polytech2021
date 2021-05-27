@@ -1,9 +1,9 @@
 package org.polytech.shipme.api;
 
 import com.google.gson.Gson;
-import org.polytech.shipme.buisness.BestOffersService;
-import org.polytech.shipme.buisness.ShippingOffer;
-import org.polytech.shipme.buisness.ShippingRequest;
+import org.polytech.shipme.buisness.delivery_manager.ShipmentRequest;
+import org.polytech.shipme.buisness.best_offer.BestOffersService;
+import org.polytech.shipme.buisness.best_offer.ShippingOffer;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -20,7 +20,7 @@ public class BestOffersServlet extends HttpServlet {
 
         // deserialize map string to object
         Gson gson = new Gson();
-        ShippingRequest shippingRequest = gson.fromJson(req.getReader(),ShippingRequest.class);
+        ShipmentRequest shippingRequest = gson.fromJson(req.getReader(),ShipmentRequest.class);
 
         // call business logic
         List<ShippingOffer> shippingOffers = bestOffersService.propose(shippingRequest);

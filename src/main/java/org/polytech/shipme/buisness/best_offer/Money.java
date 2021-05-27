@@ -1,4 +1,4 @@
-package org.polytech.shipme.buisness;
+package org.polytech.shipme.buisness.best_offer;
 
 import java.math.BigDecimal;
 

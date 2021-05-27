@@ -1,0 +1,30 @@
+POST http://localhost:8080/shipments
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{
+  "startingPoint": {
+    "address": "Paris"
+  },
+  "destination": {
+    "address": "Marseille"
+  },
+  "parcel": {
+    "type": "MEDIUM"
+  },
+  "from": {
+    "firstName": "Alain",
+    "lastName": "SAMUEL"
+  },
+  "paymentInfo": {
+    "creditCardNumber": "726739289038"
+  },
+  "to": {
+    "firstName": "Alain",
+    "lastName": "SAMUEL"
+  }
+}
+
+###
+
